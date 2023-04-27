@@ -56,3 +56,11 @@ input:focus {
 .edit-btn:hover {
   cursor: pointer;
 }
+
+ul {
+  border-radius: 1rem;
+  max-width: 25em;
+  margin: 0 auto;
+  list-style: none;
+  background-color: #e5e7eb;
+}
