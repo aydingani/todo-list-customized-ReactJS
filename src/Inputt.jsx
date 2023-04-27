@@ -1,0 +1,50 @@
+import { useState } from "react";
+import AddTodo from "./AddTodo";
+import TodoList from "./TodoList";
+
+const Inputt = () => {
+  const [todos, setTodos] = useState([]);
+  const [inputValue, setInputValue] = useState("");
+  const [editIndex, setEditIndex] = useState(null);
+
+  const handleAddTodo = () => {
+    if (inputValue) {
+      if (editIndex !== null) {
+        const newTodos = [...todos];
+        newTodos[editIndex] = inputValue;
+        setTodos(newTodos);
+        setEditIndex(null);
+      } else {
+        setTodos([...todos, inputValue]);
+      }
+      setInputValue("");
+    }
+  };
+
+  const handleDeleteTodo = (index) => {
+    setTodos(todos.filter((_, i) => i !== index));
+  };
+
+  const handleEditTodo = (index) => {
+    setInputValue(todos[index]);
+    setEditIndex(index);
+  };
+
+  return (
+    <div className="whole">
+      <AddTodo
+        inputValue={inputValue}
+        onInputChange={setInputValue}
+        onAddTodo={handleAddTodo}
+        editIndex={editIndex}
+      />
+      <TodoList
+        todos={todos}
+        onDeleteTodo={handleDeleteTodo}
+        onEditTodo={handleEditTodo}
+      />
+    </div>
+  );
+};
+
+export default Inputt;
