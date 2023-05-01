@@ -1,5 +1,6 @@
 const AddTodo = ({ inputValue, onInputChange, onAddTodo, editIndex }) => (
-  <div>
+  <div className="form-row">
+    <label>New Note</label>
     <input
       type="text"
       value={inputValue}

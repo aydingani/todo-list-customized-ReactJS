@@ -1,7 +1,7 @@
 import React from "react";
 
 const TodoItem = ({ todo, onDelete, onEdit }) => (
-  <li>
+  <li className="todo-item-flex">
     <span className="todo-text">{todo}</span>
     <button className="delete-btn" onClick={onDelete}>
       Delete

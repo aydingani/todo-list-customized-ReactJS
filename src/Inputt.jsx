@@ -38,6 +38,7 @@ const Inputt = () => {
         onAddTodo={handleAddTodo}
         editIndex={editIndex}
       />
+      <h3>My Todo List</h3>
       <TodoList
         todos={todos}
         onDeleteTodo={handleDeleteTodo}
