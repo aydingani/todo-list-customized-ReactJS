@@ -71,6 +71,16 @@ input:focus {
 .form-row {
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 15px;
+}
+
+.remaining-symbols {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  color: grey;
+  opacity: 0.8;
 }
 
 ul {

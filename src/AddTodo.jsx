@@ -3,9 +3,12 @@ const AddTodo = ({ inputValue, onInputChange, onAddTodo, editIndex }) => (
     <label>New Note</label>
     <input
       type="text"
+      maxLength="35"
       value={inputValue}
+      placeholder="Your Note"
       onChange={(e) => onInputChange(e.target.value)}
     />
+    <span className="remaining-symbols">{inputValue.length}/35</span>
     <button className="add-btn" onClick={onAddTodo}>
       {editIndex !== null ? "Save" : "Add"}
     </button>
