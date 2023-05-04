@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  background-color: #f3f4f8;
 }
 
 body {
@@ -20,7 +21,7 @@ input {
   border-radius: 18px;
   padding: 8px 12px;
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-size: 14px;
   background-color: #ebecf0;
 }
@@ -36,16 +37,16 @@ input:focus {
 }
 
 .add-btn {
-  background-color: #0074a6;
+  background-color: #33ccff;
 }
 
 .delete-btn {
-  background-color: #d94f45;
+  background-color: #ff4d4d;
   margin-left: auto;
 }
 
 .edit-btn {
-  background-color: #e059f0;
+  background-color: #3f50ff;
 }
 
 .add-btn,
@@ -65,15 +66,15 @@ input:focus {
 }
 
 .add-btn:hover {
-  background-color: #0898c7;
+  background-color: #66d9ff;
 }
 
 .delete-btn:hover {
-  background-color: #da5d57;
+  background-color: #d97c45;
 }
 
 .edit-btn:hover {
-  background-color: #e375f0;
+  background-color: #6675ff;
 }
 
 .form-row {
@@ -102,14 +103,20 @@ ul {
   gap: 10px;
   margin-bottom: 10px;
   align-items: center;
-  background-color: #94d604;
+  background-color: #e0e3ff;
   padding: 10px;
   border-radius: 18px;
 }
 
 .todo-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: #3f50ff;
+  background: transparent;
+}
+
+h3,
+.new-note {
+  font-family: Ubuntu, sans-serif;
 }
 
 .new-note,
