@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTodo from "./AddTodo";
 import TodoList from "./TodoList";
 
 const Inputt = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(
+    JSON.parse(localStorage.getItem("todos")) || []
+  );
   const [inputValue, setInputValue] = useState("");
   const [editIndex, setEditIndex] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos), [todos]);
+  });
 
   const handleAddTodo = () => {
     if (inputValue) {
