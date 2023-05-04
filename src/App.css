@@ -1,5 +1,5 @@
 * {
-  font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   background-color: #f3f4f8;
 }
@@ -21,7 +21,6 @@ input {
   border-radius: 18px;
   padding: 8px 12px;
   font-size: 14px;
-  font-family: Ubuntu, sans-serif;
   font-size: 14px;
   background-color: #ebecf0;
 }
@@ -110,15 +109,9 @@ ul {
 }
 
 .todo-text {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #3f50ff;
   background: transparent;
   font-weight: 700;
-}
-
-h3,
-.new-note {
-  font-family: Ubuntu, sans-serif;
 }
 
 .new-note,
