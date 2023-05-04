@@ -15,7 +15,7 @@ const Inputt = () => {
         setTodos(newTodos);
         setEditIndex(null);
       } else {
-        setTodos([...todos, inputValue]);
+        setTodos([inputValue, ...todos]);
       }
       setInputValue("");
     }
